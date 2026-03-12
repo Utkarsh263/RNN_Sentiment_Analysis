@@ -1,4 +1,4 @@
-# IMDB Sentiment Analysis using RNN
+# 🎬 IMDB Sentiment Analysis using RNN
 
 This project implements a **Recurrent Neural Network (RNN)** for sentiment analysis on the **IMDB movie review dataset**.  
 The model predicts whether a movie review is **positive or negative**.  
@@ -6,19 +6,19 @@ A **Streamlit web interface** is added so users can enter a review and instantly
 
 ---
 
-## Overview
+## 📌 Overview
 
 Sentiment analysis is a Natural Language Processing (NLP) task that determines the emotional tone behind a text.  
 In this project:
 
-- Movie reviews are cleaned and preprocessed.
-- Text is converted into numerical features using **TF-IDF vectorization**.
-- A **PyTorch RNN model** is trained for binary classification.
-- A **Streamlit UI** allows interactive prediction.
+- Movie reviews are cleaned and preprocessed 🧹
+- Text is converted into numerical features using **TF-IDF vectorization**
+- A **PyTorch RNN model** is trained for binary classification 🤖
+- A **Streamlit UI** allows interactive prediction 🌐
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 The dataset used is the **IMDB Movie Reviews Dataset**, which contains **50,000 reviews** labeled as positive or negative.
 
@@ -28,7 +28,7 @@ Each record includes:
 
 ---
 
-## Text Preprocessing
+## 🧹 Text Preprocessing
 
 Several preprocessing steps are applied before training the model:
 
@@ -43,7 +43,7 @@ These steps help clean the raw text and improve model performance.
 
 ---
 
-## Feature Engineering
+## 🔢 Feature Engineering
 
 The cleaned reviews are converted into numerical vectors using **TF-IDF (Term Frequency–Inverse Document Frequency)**.
 
@@ -53,13 +53,14 @@ TF-IDF helps:
 - Convert text into machine learning features
 
 Maximum vocabulary size used:
+
 ```
 5000 features
 ```
 
 ---
 
-## Model Architecture
+## 🧠 Model Architecture
 
 The model is implemented using **PyTorch** and consists of:
 
@@ -80,7 +81,7 @@ Meaning a sequence of words produces **one sentiment prediction**.
 
 ---
 
-## Training
+## 🏋️ Training
 
 The model is trained using:
 
@@ -95,7 +96,7 @@ The dataset is split into:
 
 ---
 
-## Model Evaluation
+## 📈 Model Evaluation
 
 Model performance is evaluated using **classification accuracy** on the test set.
 
@@ -107,14 +108,14 @@ Accuracy = Correct Predictions / Total Predictions
 
 ---
 
-## Streamlit Web Application
+## 🌐 Streamlit Web Application
 
 A Streamlit interface allows users to interact with the trained model.
 
 Users can:
-1. Enter a movie review
+1. Enter a movie review ✍️
 2. Click the **Predict Sentiment** button
-3. See whether the review is **Positive or Negative**
+3. See whether the review is **Positive 😊 or Negative 😞**
 
 The interface loads the saved:
 - trained RNN model
@@ -124,9 +125,9 @@ and performs prediction in real time.
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
-- Python
+- Python 🐍
 - PyTorch
 - Streamlit
 - Scikit-learn
@@ -136,7 +137,7 @@ and performs prediction in real time.
 
 ---
 
-## How It Works
+## ⚙️ How It Works
 
 1. User enters a movie review
 2. Text preprocessing is applied
@@ -147,7 +148,7 @@ and performs prediction in real time.
 
 ---
 
-## Example Prediction
+## 🧪 Example Prediction
 
 Input review:
 
@@ -164,7 +165,7 @@ Confidence: 0.91
 
 ---
 
-## Future Improvements
+## 🚀 Future Improvements
 
 Possible improvements include:
 
@@ -172,5 +173,3 @@ Possible improvements include:
 - Implementing **word embeddings (Word2Vec / GloVe)**
 - Using **BERT-based transformers**
 - Deploying the application online
-
----
