@@ -173,3 +173,9 @@ Possible improvements include:
 - Implementing **word embeddings (Word2Vec / GloVe)**
 - Using **BERT-based transformers**
 - Deploying the application online
+
+---
+
+## Deployment 
+
+Live Demo: https://rnnsentimentanalysis-m29imnyjyygtw5mjaydzhl.streamlit.app
